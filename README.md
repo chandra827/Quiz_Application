@@ -7,41 +7,43 @@ https://quiz-application-9lf2.onrender.com/
 
 ### Check Server Status
 
-GET /
+```GET /
 Response:
 {
     "message": "Server is live now!"
 }
-
+```
 ### User Signup
 
-POST /auth/signup
+```POST /auth/signup
 Request Body:
 {
     "email": "abc@123.com",
     "password": "xyzabc"
 }
-Response:
+```
+```Response:
 {
     "message": "Successfully created"
 }
-
+```
 ### User Signin
 
-POST /auth/signin
+```POST /auth/signin
 Request Body:
 {
     "email": "abc@123.com",
     "password": "xyzabc"
 }
-Response:
+```
+```Response:
 {
     "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
 }
-
+```
 ### Create Quiz
 
-POST /quizzes
+```POST /quizzes
 Request Body:
 {
     "title": "Which is an front-end language?",
@@ -50,14 +52,15 @@ Request Body:
     "startDate": "2023-12-22T10:50:00Z",
     "endDate": "2023-12-22T12:00:00Z"
 }
-Response:
+```
+```Response:
 {
     "message": "Quiz created successfully"
 }
-
+```
 ### Get Active Quizzes
 
-GET /quizzes/active
+```GET /quizzes/active
 Response:
 [
     {
@@ -71,18 +74,18 @@ Response:
     },
     ...
 ]
-
+```
 ### Get Quiz Result
 
-GET /quizzes/:id/result
+```GET /quizzes/:id/result
 Response:
 {
     "answer": "JavaScript"
 }
-
+```
 ### Get All Quizzes
 
-GET /quizzes/all
+```GET /quizzes/all
 Response:
 [
     {
@@ -96,20 +99,21 @@ Response:
     },
     ...
 ]
-
+```
 ### JWT Errors
 
-No Token:
+```No Token:
 {
     "error": "No token found"
 }
-
-Invalid Token:
+```
+```Invalid Token:
 {
     "message": "invalid token"
 }
-
-Expired Token:
+```
+```Expired Token:
 {
     "message": "jwt expired"
 }
+```
