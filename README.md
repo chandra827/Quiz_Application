@@ -1,7 +1,7 @@
 # Quiz Application API
 
 ## Base URL 
-https://quiz-application-9lf2.onrender.com/
+https://quiz-application-6g15.onrender.com
 
 ## Endpoints
 
